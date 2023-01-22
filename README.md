@@ -36,7 +36,20 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 
 ---------------------------
-Usefull commands
+Usefull commands (assuming zsh terminal is installed)
 git add -p			To decide which files to push
 git commit -m "message"		To commit
 git status	
+git push <remote> <branch> --set-upstream	Best practice: explicitely specify the origin and branch
+git log
+git checkout -b "name"		Create a new branch
+git reset --soft HEAD~1		Revert the last commit (local work, don't use after push)
+
+# Save changes and resotore them in a another branch f.i.
+git stash
+git stash list
+git stash pop
+
+# Git hooks
+python: pre-commit
+node: husky
