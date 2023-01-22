@@ -51,5 +51,9 @@ git stash list
 git stash pop
 
 # Git hooks
-python: pre-commit
+python: pre-commit --> .pre-commit-config.yaml
 node: husky
+
+Amend -> to use before commit to extend the commit
+Revert -> undo commit by doing a new commit reverting to the previous state
+
